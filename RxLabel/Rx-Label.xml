@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="b22e0500-5a0d-49eb-9ead-bc33a6e6e8d1" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Rx Label" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b22e0500-5a0d-49eb-9ead-bc33a6e6e8d1fileName">Rx-Label</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="803ba49e-d04a-4c34-87ed-3ef5a020153a">
+    <con:settings/>
+    <con:config service="https://api.qa.vetsfirstchoice.io" resourcePath="/private/esb/rx-label/{rxLabelUuid}" methodName="RxLabelUuid" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="79aada3b-a476-47cd-9514-0f98fb686a5f" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://api.qa.vetsfirstchoice.io</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="5b9da12d-5505-430c-9016-0d34e99827ab" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="04135339-e3a8-4b0f-8b22-6a7efcd3f093" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="rxLabelUuid" value="rxLabelUuid"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>rxLabelUuid</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="dd8d7baa-b279-47db-bf63-44bb4a5f4e40">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="1f5c5708-c2a7-4064-8cd6-0bf92c18af55" name="RxLabel" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1f5c5708-c2a7-4064-8cd6-0bf92c18af55fileName">RxLabel</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

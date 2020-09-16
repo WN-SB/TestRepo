@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="RxLabelUuid" path="/private/esb/rx-label/{rxLabelUuid}" id="9d33925a-858d-4fd3-946a-5fc6c7aefa3b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9d33925a-858d-4fd3-946a-5fc6c7aefa3bfileName">RxLabelUuid</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="RxLabelUuid" id="8731c4dc-da7e-41aa-8dbe-1c86ca9900be" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>rxLabelUuid</con:name>
+        <con:value>rxLabelUuid</con:value>
+        <con:style>TEMPLATE</con:style>
+        <con:default>rxLabelUuid</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="79aada3b-a476-47cd-9514-0f98fb686a5f" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://api.qa.vetsfirstchoice.io</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="rxLabelUuid" value="rxLabelUuid"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>rxLabelUuid</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="dd8d7baa-b279-47db-bf63-44bb4a5f4e40">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+  </con:method>
+</con:resource>

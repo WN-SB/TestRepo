@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="f716cb5b-5048-48c8-b5a1-658a5a6fef21" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api.qa.vetsfirstchoice.io" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f716cb5b-5048-48c8-b5a1-658a5a6fef21fileName">https%3A%2F%2Fapi.qa.vetsfirstchoice.io</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>https://api.qa.vetsfirstchoice.io</con:endpoint>
+  </con:endpoints>
+</con:interface>
