@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+- task: SoapUIProForAzureDevOpsTask@2
+  inputs:
+    testRunnerPath: '"C:\Program Files\SmartBear\ReadyAPI-3.5.1\bin\testrunner.bat"'
+    project: 'C:\Users\wesley.nutley\Downloads\REST-Project-1-tutorial_'
+    rootFolder: '$(Common.TestResultsDirectory)'
